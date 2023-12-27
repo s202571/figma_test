@@ -1,0 +1,53 @@
+main {
+    display: flex; justify-content: center;
+}
+/* 상품 전체 */
+main .item_all {
+    display: flex; flex-flow: row nowrap;
+    width: 1200px;
+}
+/* 1개의 상품 */
+main .item_all .item {
+    margin-right: 30px;
+}
+main .item_all .item:last-child {
+    margin-right: 0;
+}
+main .item_all .item a {}
+main .item_all .item a img {
+    width: calc(1200px / 3 - 20px); height: auto;
+}
+main .item_all .item a p {
+    font-size: 0.75rem;
+    margin: 9px 0;
+}
+main .item_all .item a .price {
+    font-size: 0.8rem; font-weight: 700;
+    border-bottom:1px solid #000  ;
+    padding-bottom: 9px ;
+}
+main .item_all .item a .production {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+}
+main .item_all .item a .production p {}
+main .item_all .item a .production .review {
+    color: #333333;
+}
+main .item_all .item a .last {
+    display: flex; flex-flow: row nowrap;
+    font-size: 0.7rem;
+}
+main .item_all .item a .last .best {
+    border: 1px solid #000;
+    margin-right: 5px;
+    color:#001AFF ;
+    padding: 2px 5px;
+}
+main .item_all .item a .last .order {
+    border: 1px solid #000;
+    color: #EB0B0B;
+    padding: 2px 5px;
+}
